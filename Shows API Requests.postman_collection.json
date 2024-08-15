@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "e319f27a-f9a1-4b4f-b693-2f6a9c2a4f4b",
+		"name": "Shows API Requests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37364996"
+	},
+	"item": [
+		{
+			"name": "Find show",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/tv_shows/{{title}}",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"tv_shows",
+						"{{title}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Show",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Example_Show_2\",\r\n  \"premiere\": \"2024-08-14T00:00:00.000Z\",\r\n  \"is_running\": true,\r\n  \"language\": \"English\",\r\n  \"main_genre\": \"Drama\",\r\n  \"poster_url\": \"http://example.com/poster.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/tv_shows",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"tv_shows"
+					],
+					"query": [
+						{
+							"key": "baseURL",
+							"value": "https://localhost:27017",
+							"description": "http://localhost:27017",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "http://localhost:3000",
+			"type": "string"
+		},
+		{
+			"key": "title",
+			"value": "a",
+			"type": "string"
+		}
+	]
+}
