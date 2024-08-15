@@ -96,7 +96,12 @@ A Show API foi criada para fornecer uma maneira simples de adicionar e buscar in
 ### Imagens do Uso
 
 - Adicionando uma Série
+  
+  ![Tela de Post](assets/Post.png)
+
 - Buscando Séries
+  
+  ![Tela de Find](assets/Find.png)
 
 ### Motivo da Criação
 
